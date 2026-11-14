@@ -49,8 +49,6 @@ The catalog lives in a JSON file and every piece of state (cart, orders, admin e
 
 ## Screenshots
 
-> Screenshots will be added soon.
-
 | Home | Shop |
 | --- | --- |
 | ![Home page](screenshots/home.png) | ![Shop page](screenshots/shop.png) |
