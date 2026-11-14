@@ -311,3 +311,95 @@
 @media (max-width: 600px) {
   .shop-toolbar__select { flex: 1 1 auto; }
 }
+
+/* ---------- Product detail ---------- */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  padding-top: 24px;
+  align-items: start;
+}
+
+.product-detail__crumbs { grid-column: 1 / -1; margin-bottom: 0; }
+
+.product-detail__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+}
+
+.product-detail__media img { width: 100%; height: 100%; object-fit: cover; }
+.product-detail__media .badge { position: absolute; top: 16px; left: 16px; font-size: 0.85rem; }
+
+.product-detail__info h1 { margin-bottom: 12px; }
+
+.product-detail__rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.product-detail__rating .stars { font-size: 1.1rem; }
+
+.price--lg .price__current { font-size: 2rem; }
+.price--lg .price__old { font-size: 1.1rem; }
+
+.product-detail__desc {
+  margin: 16px 0 20px;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.highlights,
+.assurances {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.highlights li,
+.assurances li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.highlights svg { color: var(--color-success); flex-shrink: 0; }
+
+.product-detail__stock { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+
+.buy-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.buy-box .qty { min-height: 52px; }
+.buy-box .qty input,
+.buy-box .qty button { height: 50px; }
+.buy-box .btn { flex: 1 1 200px; }
+
+.assurances {
+  padding: 16px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  font-size: 0.9rem;
+}
+
+.assurances svg { color: var(--color-primary); flex-shrink: 0; }
+
+@media (max-width: 860px) {
+  .product-detail { grid-template-columns: 1fr; gap: 24px; }
+  .product-detail__media { max-width: 560px; }
+}
