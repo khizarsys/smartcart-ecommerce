@@ -1,0 +1,24 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & dependencies (if a dev server is ever added)
+node_modules/
+npm-debug.log*
+*.log
+
+# Local tooling caches
+.cache/
+dist/
