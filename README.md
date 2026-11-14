@@ -9,6 +9,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%20Modules-F7DF1E?logo=javascript&logoColor=black)
 ![No frameworks](https://img.shields.io/badge/frameworks-none-success)
 ![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?logo=github)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
@@ -96,7 +97,8 @@ smartcart-ecommerce/
 ├── assets/images/        # Favicon, product and category illustrations (SVG)
 ├── screenshots/          # README screenshots
 ├── .env.example
-└── .gitignore
+├── .gitignore
+└── LICENSE
 ```
 
 ## How to run locally
@@ -155,6 +157,10 @@ Copy it with `cp .env.example .env` if you add a backend; `.env` is git-ignored.
 - Pagination or infinite scroll for large catalogs
 - Unit tests for cart and validation logic (e.g. Vitest) and end-to-end tests (Playwright)
 - PWA support for offline browsing
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ## Author
 
