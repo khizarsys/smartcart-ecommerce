@@ -76,7 +76,7 @@
 
 .hero__visual {
   position: relative;
-  min-height: 460px;
+  min-height: 580px;
 }
 
 .hero__blob {
@@ -116,9 +116,10 @@
   color: var(--color-text-muted);
 }
 
-.hero__tile--1 { width: 54%; top: 0; left: 4%; }
-.hero__tile--2 { width: 42%; top: 14%; right: 0; animation-delay: -2s; }
-.hero__tile--3 { width: 40%; bottom: 0; left: 22%; animation-delay: -4s; }
+/* Staggered collage; tiles are placed so captions never overlap on desktop. */
+.hero__tile--1 { width: 50%; top: 0; left: 0; }
+.hero__tile--2 { width: 40%; top: 18%; right: 0; animation-delay: -2s; }
+.hero__tile--3 { width: 40%; bottom: 0; left: 18%; animation-delay: -4s; }
 
 @keyframes float {
   50% { transform: translateY(-10px); }
@@ -126,7 +127,7 @@
 
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; }
-  .hero__visual { min-height: 0; aspect-ratio: 1.15; max-width: 520px; width: 100%; margin: 0 auto; }
+  .hero__visual { min-height: 0; aspect-ratio: 0.9; max-width: 520px; width: 100%; margin: 0 auto; }
 }
 
 @media (max-width: 520px) {
