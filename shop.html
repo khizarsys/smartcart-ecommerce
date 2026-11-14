@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all products — SmartCart</title>
+  <meta name="description" content="Browse, search and filter the full SmartCart catalog.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/pages/shop.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div class="page-head">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Shop</span>
+      </nav>
+      <h1>Shop all products</h1>
+      <p class="muted">Search, filter and sort our full catalog.</p>
+    </div>
+
+    <form class="shop-toolbar" id="shop-filters" role="search" aria-label="Filter products">
+      <div class="shop-toolbar__search">
+        <label for="filter-search" class="visually-hidden">Search products</label>
+        <input id="filter-search" class="input" type="search" name="q" placeholder="Search by name, category or description…" autocomplete="off">
+      </div>
+      <div class="field shop-toolbar__select">
+        <label for="filter-sort" class="visually-hidden">Sort by</label>
+        <select id="filter-sort" class="select" name="sort">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to high</option>
+          <option value="price-desc">Price: High to low</option>
+          <option value="rating">Top rated</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+      <label class="checkbox shop-toolbar__stock">
+        <input type="checkbox" name="inStock" id="filter-stock"> In stock only
+      </label>
+    </form>
+
+    <div class="chip-row" id="category-chips" role="group" aria-label="Filter by category"></div>
+
+    <div class="shop-meta">
+      <p class="muted" id="result-count" aria-live="polite">Loading products…</p>
+      <button type="button" class="btn btn--ghost btn--sm" id="clear-filters" hidden>Clear filters</button>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+      <div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
