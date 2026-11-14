@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin panel — SmartCart</title>
+  <meta name="description" content="SmartCart demo admin panel for managing products and orders.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div class="demo-banner" role="note">
+      <strong>Demo admin panel.</strong> The password is <code id="demo-password">…</code> (set in <code>js/config.js</code>).
+      Changes are stored only in this browser's localStorage — this is not real authentication.
+    </div>
+
+    <!-- Login -->
+    <section class="login" id="login-view" hidden>
+      <form class="panel login__card" id="login-form" novalidate>
+        <span class="empty-state__icon" id="login-icon"></span>
+        <h1>Admin sign in</h1>
+        <p class="muted">Enter the demo password to manage products and orders.</p>
+        <div class="field">
+          <label for="admin-password">Password</label>
+          <input class="input" id="admin-password" name="password" type="password" autocomplete="current-password" required>
+          <span class="field__error" id="password-error"></span>
+        </div>
+        <button class="btn btn--primary btn--block btn--lg" type="submit">Sign in</button>
+      </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard-view" hidden>
+      <div class="admin-head">
+        <div>
+          <h1>Dashboard</h1>
+          <p class="muted">Manage your catalog and review incoming orders.</p>
+        </div>
+        <div class="admin-head__actions">
+          <button type="button" class="btn btn--outline" id="reset-catalog">Reset catalog</button>
+          <button type="button" class="btn btn--ghost" id="logout">Sign out</button>
+        </div>
+      </div>
+
+      <div class="stat-grid" id="stats"></div>
+
+      <div class="tabs" role="tablist" aria-label="Admin sections">
+        <button type="button" role="tab" id="tab-products" aria-controls="panel-products" aria-selected="true">Products</button>
+        <button type="button" role="tab" id="tab-orders" aria-controls="panel-orders" aria-selected="false" tabindex="-1">Orders</button>
+      </div>
+
+      <div role="tabpanel" id="panel-products" aria-labelledby="tab-products" class="panel tab-panel">
+        <div class="table-toolbar">
+          <input class="input" type="search" id="product-search" placeholder="Search products…" aria-label="Search products">
+          <button type="button" class="btn btn--primary" id="add-product">+ Add product</button>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr><th>Product</th><th>Category</th><th class="num">Price</th><th class="num">Stock</th><th>Featured</th><th class="actions-col"><span class="visually-hidden">Actions</span></th></tr>
+            </thead>
+            <tbody id="product-rows"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="panel-orders" aria-labelledby="tab-orders" class="panel tab-panel" hidden>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr><th>Order</th><th>Date</th><th>Customer</th><th class="num">Items</th><th class="num">Total</th><th>Status</th><th class="actions-col"><span class="visually-hidden">Details</span></th></tr>
+            </thead>
+            <tbody id="order-rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Add / edit product dialog -->
+  <dialog class="modal" id="product-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" id="product-form" novalidate>
+      <div class="modal__head">
+        <h2 id="dialog-title">Add product</h2>
+        <button type="button" class="btn btn--ghost btn--icon btn--sm" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal__body form-grid">
+        <div class="field span-2">
+          <label for="pf-name">Product name</label>
+          <input class="input" id="pf-name" name="name" required maxlength="80">
+          <span class="field__error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-category">Category</label>
+          <input class="input" id="pf-category" name="category" list="category-options" required maxlength="40">
+          <datalist id="category-options"></datalist>
+          <span class="field__error" id="category-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-stock">Stock</label>
+          <input class="input" id="pf-stock" name="stock" type="number" min="0" step="1" required>
+          <span class="field__error" id="stock-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-price">Price (USD)</label>
+          <input class="input" id="pf-price" name="price" type="number" min="0.01" step="0.01" required>
+          <span class="field__error" id="price-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-compare">Compare-at price <span class="muted">(optional)</span></label>
+          <input class="input" id="pf-compare" name="compareAtPrice" type="number" min="0" step="0.01">
+          <span class="field__error" id="compareAtPrice-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-rating">Rating (0–5)</label>
+          <input class="input" id="pf-rating" name="rating" type="number" min="0" max="5" step="0.1" required>
+          <span class="field__error" id="rating-error"></span>
+        </div>
+        <div class="field">
+          <label for="pf-reviews">Review count</label>
+          <input class="input" id="pf-reviews" name="reviews" type="number" min="0" step="1" required>
+          <span class="field__error" id="reviews-error"></span>
+        </div>
+        <div class="field span-2">
+          <label for="pf-image">Image path or URL</label>
+          <input class="input" id="pf-image" name="image" list="image-options" required placeholder="assets/images/products/…svg or https://…">
+          <datalist id="image-options"></datalist>
+          <span class="field__error" id="image-error"></span>
+        </div>
+        <div class="field span-2">
+          <label for="pf-description">Description</label>
+          <textarea class="textarea" id="pf-description" name="description" required maxlength="600"></textarea>
+          <span class="field__error" id="description-error"></span>
+        </div>
+        <div class="field span-2">
+          <label for="pf-highlights">Highlights <span class="muted">(one per line, optional)</span></label>
+          <textarea class="textarea" id="pf-highlights" name="highlights" rows="3"></textarea>
+        </div>
+        <label class="checkbox span-2">
+          <input type="checkbox" id="pf-featured" name="featured"> Show in “Featured products” on the home page
+        </label>
+      </div>
+      <div class="modal__foot">
+        <button type="button" class="btn btn--ghost" data-close>Cancel</button>
+        <button type="submit" class="btn btn--primary" id="save-product">Save product</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Order details dialog -->
+  <dialog class="modal" id="order-dialog" aria-labelledby="order-dialog-title">
+    <div class="modal__head">
+      <h2 id="order-dialog-title">Order details</h2>
+      <button type="button" class="btn btn--ghost btn--icon btn--sm" data-close aria-label="Close">✕</button>
+    </div>
+    <div class="modal__body" id="order-dialog-body"></div>
+  </dialog>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
