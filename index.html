@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartCart — Shop smarter, live better</title>
+  <meta name="description" content="SmartCart is a modern online store for electronics, fashion, home, sports and beauty essentials.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/pages/home.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow">New season · Up to 30% off</span>
+          <h1>Shop smarter.<br><span class="gradient-text">Live better.</span></h1>
+          <p class="hero__lead">Hand-picked electronics, fashion, home and wellness essentials — with free shipping on orders over $75 and hassle-free 30-day returns.</p>
+          <div class="hero__actions">
+            <a href="shop.html" class="btn btn--primary btn--lg">Shop now</a>
+            <a href="#featured" class="btn btn--outline btn--lg">See featured</a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt>30+</dt><dd>Curated products</dd></div>
+            <div><dt>4.6★</dt><dd>Average rating</dd></div>
+            <div><dt>24h</dt><dd>Dispatch time</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual" id="hero-visual" aria-hidden="true">
+          <div class="hero__blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perks" aria-label="Store benefits">
+      <div class="container perks__grid" id="perks"></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Shop by category</h2>
+            <p class="muted">Find exactly what you need, faster.</p>
+          </div>
+          <a href="shop.html" class="btn btn--ghost">All products</a>
+        </div>
+        <div class="category-grid" id="category-grid">
+          <div class="skeleton category-card"></div><div class="skeleton category-card"></div><div class="skeleton category-card"></div><div class="skeleton category-card"></div><div class="skeleton category-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Featured products</h2>
+            <p class="muted">Customer favourites and this week's best deals.</p>
+          </div>
+          <a href="shop.html?sort=rating" class="btn btn--ghost">View top rated</a>
+        </div>
+        <div class="product-grid" id="featured-grid">
+          <div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div><div class="skeleton skeleton-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="promo">
+          <div>
+            <span class="eyebrow eyebrow--light">Limited time</span>
+            <h2>Free shipping on orders over $75</h2>
+            <p>Stock up on the essentials and we'll cover delivery — no codes required.</p>
+          </div>
+          <a href="shop.html?sort=price-desc" class="btn btn--lg promo__btn">Start shopping</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
