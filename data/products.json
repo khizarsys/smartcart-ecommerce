@@ -1,0 +1,576 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "products": [
+    {
+      "id": "p001",
+      "name": "AuraSound Pro Wireless Headphones",
+      "category": "Electronics",
+      "price": 149.99,
+      "compareAtPrice": 199.99,
+      "rating": 4.7,
+      "reviews": 1284,
+      "stock": 24,
+      "featured": true,
+      "image": "assets/images/products/p001-aurasound-pro-wireless-headphones.svg",
+      "description": "Immersive over-ear headphones with hybrid active noise cancellation, plush memory-foam cushions and up to 40 hours of playback on a single charge.",
+      "highlights": [
+        "Hybrid active noise cancellation",
+        "40-hour battery with fast charge",
+        "Bluetooth 5.3 multipoint pairing",
+        "Foldable design with travel case"
+      ]
+    },
+    {
+      "id": "p002",
+      "name": "Pulse Fit Smartwatch S2",
+      "category": "Electronics",
+      "price": 129,
+      "compareAtPrice": null,
+      "rating": 4.4,
+      "reviews": 862,
+      "stock": 31,
+      "featured": true,
+      "image": "assets/images/products/p002-pulse-fit-smartwatch-s2.svg",
+      "description": "A lightweight fitness smartwatch that tracks heart rate, sleep, SpO2 and over 100 workout modes, with a bright always-on AMOLED display.",
+      "highlights": [
+        "1.4\" always-on AMOLED display",
+        "7-day battery life",
+        "Water resistant to 50 m",
+        "Built-in GPS"
+      ]
+    },
+    {
+      "id": "p003",
+      "name": "BoomCube Portable Speaker",
+      "category": "Electronics",
+      "price": 59.99,
+      "compareAtPrice": 79.99,
+      "rating": 4.5,
+      "reviews": 2140,
+      "stock": 48,
+      "featured": false,
+      "image": "assets/images/products/p003-boomcube-portable-speaker.svg",
+      "description": "Rugged pocket-sized Bluetooth speaker with surprisingly deep bass, IP67 water resistance and 18 hours of playtime.",
+      "highlights": [
+        "IP67 dust and water resistant",
+        "18-hour battery",
+        "Stereo pairing with a second speaker",
+        "Built-in speakerphone"
+      ]
+    },
+    {
+      "id": "p004",
+      "name": "Nova X Smartphone 128 GB",
+      "category": "Electronics",
+      "price": 499,
+      "compareAtPrice": 549,
+      "rating": 4.6,
+      "reviews": 734,
+      "stock": 12,
+      "featured": true,
+      "image": "assets/images/products/p004-nova-x-smartphone-128-gb.svg",
+      "description": "Flagship-grade performance with a 6.5\" 120 Hz display, triple-lens camera system and all-day battery in a slim aluminium body.",
+      "highlights": [
+        "6.5\" 120 Hz OLED display",
+        "50 MP triple camera",
+        "128 GB storage",
+        "4,800 mAh battery with 33 W charging"
+      ]
+    },
+    {
+      "id": "p005",
+      "name": "KeyFlow Mechanical Keyboard",
+      "category": "Electronics",
+      "price": 89.5,
+      "compareAtPrice": null,
+      "rating": 4.8,
+      "reviews": 516,
+      "stock": 20,
+      "featured": false,
+      "image": "assets/images/products/p005-keyflow-mechanical-keyboard.svg",
+      "description": "Compact 75% hot-swappable mechanical keyboard with tactile switches, per-key RGB lighting and wireless or wired connectivity.",
+      "highlights": [
+        "Hot-swappable tactile switches",
+        "Tri-mode: Bluetooth, 2.4 GHz, USB-C",
+        "Per-key RGB backlight",
+        "Aluminium top case"
+      ]
+    },
+    {
+      "id": "p006",
+      "name": "SnapShot Mirrorless Camera",
+      "category": "Electronics",
+      "price": 749,
+      "compareAtPrice": 829,
+      "rating": 4.7,
+      "reviews": 298,
+      "stock": 6,
+      "featured": false,
+      "image": "assets/images/products/p006-snapshot-mirrorless-camera.svg",
+      "description": "A 24 MP mirrorless camera with fast hybrid autofocus, 4K video and a flip screen made for creators on the go.",
+      "highlights": [
+        "24 MP APS-C sensor",
+        "4K 30p video recording",
+        "Fully articulating touchscreen",
+        "Kit lens 16–50 mm included"
+      ]
+    },
+    {
+      "id": "p007",
+      "name": "Essential Organic Cotton Tee",
+      "category": "Fashion",
+      "price": 24,
+      "compareAtPrice": null,
+      "rating": 4.5,
+      "reviews": 1902,
+      "stock": 120,
+      "featured": false,
+      "image": "assets/images/products/p007-essential-organic-cotton-tee.svg",
+      "description": "A wardrobe staple cut from 100% organic cotton with a relaxed fit, reinforced seams and a soft pre-washed finish.",
+      "highlights": [
+        "100% GOTS-certified organic cotton",
+        "Relaxed unisex fit",
+        "Pre-shrunk and pre-washed",
+        "Available in 8 colours"
+      ]
+    },
+    {
+      "id": "p008",
+      "name": "Stride Runner Sneakers",
+      "category": "Fashion",
+      "price": 89.99,
+      "compareAtPrice": 119.99,
+      "rating": 4.6,
+      "reviews": 1033,
+      "stock": 35,
+      "featured": true,
+      "image": "assets/images/products/p008-stride-runner-sneakers.svg",
+      "description": "Everyday sneakers with a breathable knit upper, cushioned foam midsole and grippy rubber outsole for all-day comfort.",
+      "highlights": [
+        "Breathable engineered-knit upper",
+        "Responsive foam midsole",
+        "Removable cushioned insole",
+        "Machine washable"
+      ]
+    },
+    {
+      "id": "p009",
+      "name": "Metro Leather Tote Bag",
+      "category": "Fashion",
+      "price": 129,
+      "compareAtPrice": null,
+      "rating": 4.7,
+      "reviews": 412,
+      "stock": 18,
+      "featured": false,
+      "image": "assets/images/products/p009-metro-leather-tote-bag.svg",
+      "description": "A structured full-grain leather tote with a padded laptop sleeve, zip pocket and comfortable shoulder straps.",
+      "highlights": [
+        "Full-grain vegetable-tanned leather",
+        "Fits laptops up to 14\"",
+        "Interior zip and phone pockets",
+        "Magnetic top closure"
+      ]
+    },
+    {
+      "id": "p010",
+      "name": "Summit Puffer Jacket",
+      "category": "Fashion",
+      "price": 159,
+      "compareAtPrice": 199,
+      "rating": 4.8,
+      "reviews": 587,
+      "stock": 22,
+      "featured": true,
+      "image": "assets/images/products/p010-summit-puffer-jacket.svg",
+      "description": "A lightweight, packable puffer jacket insulated with recycled down alternative to keep you warm without the bulk.",
+      "highlights": [
+        "Recycled synthetic insulation",
+        "Water-repellent shell",
+        "Packs into its own pocket",
+        "Adjustable hem and cuffs"
+      ]
+    },
+    {
+      "id": "p011",
+      "name": "Horizon Polarized Sunglasses",
+      "category": "Fashion",
+      "price": 49,
+      "compareAtPrice": null,
+      "rating": 4.3,
+      "reviews": 664,
+      "stock": 54,
+      "featured": false,
+      "image": "assets/images/products/p011-horizon-polarized-sunglasses.svg",
+      "description": "Classic square frames with polarized UV400 lenses that cut glare for driving, beach days and city walks.",
+      "highlights": [
+        "Polarized UV400 lenses",
+        "Lightweight acetate frame",
+        "Spring-loaded hinges",
+        "Includes hard case and cloth"
+      ]
+    },
+    {
+      "id": "p012",
+      "name": "Classic Twill Baseball Cap",
+      "category": "Fashion",
+      "price": 19.99,
+      "compareAtPrice": 24.99,
+      "rating": 4.4,
+      "reviews": 875,
+      "stock": 80,
+      "featured": false,
+      "image": "assets/images/products/p012-classic-twill-baseball-cap.svg",
+      "description": "A broken-in six-panel cap in washed cotton twill with an adjustable brass buckle strap.",
+      "highlights": [
+        "Washed cotton twill",
+        "Adjustable brass buckle",
+        "Pre-curved brim",
+        "One size fits most"
+      ]
+    },
+    {
+      "id": "p013",
+      "name": "Barista Ceramic Mug Set (4)",
+      "category": "Home & Kitchen",
+      "price": 34,
+      "compareAtPrice": null,
+      "rating": 4.6,
+      "reviews": 1120,
+      "stock": 64,
+      "featured": false,
+      "image": "assets/images/products/p013-barista-ceramic-mug-set-4.svg",
+      "description": "A set of four 12 oz stoneware mugs with a speckled reactive glaze — microwave and dishwasher safe.",
+      "highlights": [
+        "Set of four 12 oz mugs",
+        "Durable stoneware",
+        "Microwave and dishwasher safe",
+        "Hand-finished glaze"
+      ]
+    },
+    {
+      "id": "p014",
+      "name": "Lumen Arc Desk Lamp",
+      "category": "Home & Kitchen",
+      "price": 69,
+      "compareAtPrice": 89,
+      "rating": 4.5,
+      "reviews": 389,
+      "stock": 27,
+      "featured": true,
+      "image": "assets/images/products/p014-lumen-arc-desk-lamp.svg",
+      "description": "A minimalist LED desk lamp with adjustable colour temperature, five brightness levels and a USB-C charging port.",
+      "highlights": [
+        "3 colour temperatures, 5 brightness levels",
+        "Flicker-free LED",
+        "USB-C charging port in base",
+        "Touch controls with memory"
+      ]
+    },
+    {
+      "id": "p015",
+      "name": "ProSear Non-Stick Frying Pan 28 cm",
+      "category": "Home & Kitchen",
+      "price": 44.99,
+      "compareAtPrice": null,
+      "rating": 4.7,
+      "reviews": 1543,
+      "stock": 40,
+      "featured": false,
+      "image": "assets/images/products/p015-prosear-non-stick-frying-pan-28-cm.svg",
+      "description": "A PFOA-free ceramic non-stick pan with a thick aluminium base for even heating on every hob, including induction.",
+      "highlights": [
+        "PFOA-free ceramic coating",
+        "Induction compatible",
+        "Oven safe up to 230 °C",
+        "Stay-cool handle"
+      ]
+    },
+    {
+      "id": "p016",
+      "name": "Monstera Plant in Ceramic Pot",
+      "category": "Home & Kitchen",
+      "price": 39,
+      "compareAtPrice": null,
+      "rating": 4.4,
+      "reviews": 276,
+      "stock": 15,
+      "featured": false,
+      "image": "assets/images/products/p016-monstera-plant-in-ceramic-pot.svg",
+      "description": "A healthy, easy-care Monstera deliciosa delivered in a matte ceramic pot — a natural statement for any room.",
+      "highlights": [
+        "40–50 cm tall live plant",
+        "Matte ceramic pot with drainage",
+        "Thrives in indirect light",
+        "Care guide included"
+      ]
+    },
+    {
+      "id": "p017",
+      "name": "CloudRest Memory Foam Pillow",
+      "category": "Home & Kitchen",
+      "price": 54,
+      "compareAtPrice": 69,
+      "rating": 4.5,
+      "reviews": 932,
+      "stock": 33,
+      "featured": false,
+      "image": "assets/images/products/p017-cloudrest-memory-foam-pillow.svg",
+      "description": "Contoured memory foam pillow with a cooling bamboo cover that supports your neck in every sleeping position.",
+      "highlights": [
+        "Adaptive memory foam core",
+        "Removable cooling bamboo cover",
+        "Hypoallergenic",
+        "100-night trial"
+      ]
+    },
+    {
+      "id": "p018",
+      "name": "Brewmaster Electric Kettle 1.7 L",
+      "category": "Home & Kitchen",
+      "price": 49.99,
+      "compareAtPrice": null,
+      "rating": 4.6,
+      "reviews": 701,
+      "stock": 0,
+      "featured": false,
+      "image": "assets/images/products/p018-brewmaster-electric-kettle-1-7-l.svg",
+      "description": "A fast-boil stainless steel kettle with five temperature presets, keep-warm mode and auto shut-off.",
+      "highlights": [
+        "5 temperature presets",
+        "1.7 L capacity",
+        "Keep-warm for 30 minutes",
+        "Auto shut-off and boil-dry protection"
+      ]
+    },
+    {
+      "id": "p019",
+      "name": "FlexGrip Yoga Mat 6 mm",
+      "category": "Sports & Outdoors",
+      "price": 39.99,
+      "compareAtPrice": 49.99,
+      "rating": 4.7,
+      "reviews": 1388,
+      "stock": 58,
+      "featured": true,
+      "image": "assets/images/products/p019-flexgrip-yoga-mat-6-mm.svg",
+      "description": "An extra-grippy 6 mm natural rubber mat with alignment lines, cushioning your joints in every pose.",
+      "highlights": [
+        "Natural rubber, non-slip surface",
+        "6 mm cushioning",
+        "Laser-etched alignment lines",
+        "Carry strap included"
+      ]
+    },
+    {
+      "id": "p020",
+      "name": "HydroPeak Insulated Bottle 750 ml",
+      "category": "Sports & Outdoors",
+      "price": 27,
+      "compareAtPrice": null,
+      "rating": 4.8,
+      "reviews": 2310,
+      "stock": 95,
+      "featured": false,
+      "image": "assets/images/products/p020-hydropeak-insulated-bottle-750-ml.svg",
+      "description": "Double-wall vacuum insulated bottle that keeps drinks cold for 24 hours or hot for 12, with a leak-proof lid.",
+      "highlights": [
+        "Keeps cold 24 h / hot 12 h",
+        "18/8 stainless steel",
+        "Leak-proof, BPA-free lid",
+        "Fits most cup holders"
+      ]
+    },
+    {
+      "id": "p021",
+      "name": "IronCore Adjustable Dumbbell 24 kg",
+      "category": "Sports & Outdoors",
+      "price": 189,
+      "compareAtPrice": 229,
+      "rating": 4.6,
+      "reviews": 441,
+      "stock": 9,
+      "featured": false,
+      "image": "assets/images/products/p021-ironcore-adjustable-dumbbell-24-kg.svg",
+      "description": "Replace an entire rack with one adjustable dumbbell — dial from 2.5 kg to 24 kg in seconds.",
+      "highlights": [
+        "Adjusts from 2.5 kg to 24 kg",
+        "15 weight settings",
+        "Quick-select dial",
+        "Compact storage tray"
+      ]
+    },
+    {
+      "id": "p022",
+      "name": "Trailblazer 30 L Hiking Backpack",
+      "category": "Sports & Outdoors",
+      "price": 79,
+      "compareAtPrice": null,
+      "rating": 4.7,
+      "reviews": 653,
+      "stock": 26,
+      "featured": false,
+      "image": "assets/images/products/p022-trailblazer-30-l-hiking-backpack.svg",
+      "description": "A lightweight day pack with a ventilated back panel, hydration sleeve and integrated rain cover.",
+      "highlights": [
+        "30 L capacity",
+        "Ventilated mesh back panel",
+        "Hydration-reservoir compatible",
+        "Integrated rain cover"
+      ]
+    },
+    {
+      "id": "p023",
+      "name": "BaseCamp 2-Person Tent",
+      "category": "Sports & Outdoors",
+      "price": 139,
+      "compareAtPrice": 169,
+      "rating": 4.5,
+      "reviews": 318,
+      "stock": 11,
+      "featured": true,
+      "image": "assets/images/products/p023-basecamp-2-person-tent.svg",
+      "description": "A freestanding three-season tent that pitches in under five minutes, with two doors and a full-coverage rain fly.",
+      "highlights": [
+        "Sleeps 2, weighs 2.1 kg",
+        "Pitches in under 5 minutes",
+        "Two doors and two vestibules",
+        "Waterproof 3,000 mm fly"
+      ]
+    },
+    {
+      "id": "p024",
+      "name": "AeroDry Training Shorts",
+      "category": "Sports & Outdoors",
+      "price": 29.99,
+      "compareAtPrice": null,
+      "rating": 4.3,
+      "reviews": 512,
+      "stock": 70,
+      "featured": false,
+      "image": "assets/images/products/p024-aerodry-training-shorts.svg",
+      "description": "Quick-dry running shorts with a built-in liner, zip pocket for your phone and reflective details for evening runs.",
+      "highlights": [
+        "Quick-dry stretch fabric",
+        "Built-in brief liner",
+        "Zip phone pocket",
+        "Reflective details"
+      ]
+    },
+    {
+      "id": "p025",
+      "name": "Glow Vitamin C Serum 30 ml",
+      "category": "Beauty",
+      "price": 32,
+      "compareAtPrice": 38,
+      "rating": 4.6,
+      "reviews": 1764,
+      "stock": 44,
+      "featured": true,
+      "image": "assets/images/products/p025-glow-vitamin-c-serum-30-ml.svg",
+      "description": "A brightening serum with 15% vitamin C, hyaluronic acid and ferulic acid for a smoother, more radiant complexion.",
+      "highlights": [
+        "15% stabilised vitamin C",
+        "With hyaluronic and ferulic acid",
+        "Suitable for all skin types",
+        "Vegan and cruelty-free"
+      ]
+    },
+    {
+      "id": "p026",
+      "name": "Velvet Matte Lipstick",
+      "category": "Beauty",
+      "price": 18,
+      "compareAtPrice": null,
+      "rating": 4.4,
+      "reviews": 980,
+      "stock": 88,
+      "featured": false,
+      "image": "assets/images/products/p026-velvet-matte-lipstick.svg",
+      "description": "A long-wearing, creamy matte lipstick enriched with shea butter so lips stay comfortable all day.",
+      "highlights": [
+        "Long-wearing matte finish",
+        "Enriched with shea butter",
+        "12 shades",
+        "Fragrance-free"
+      ]
+    },
+    {
+      "id": "p027",
+      "name": "HydraBoost Daily Moisturizer",
+      "category": "Beauty",
+      "price": 26.5,
+      "compareAtPrice": null,
+      "rating": 4.7,
+      "reviews": 1421,
+      "stock": 52,
+      "featured": false,
+      "image": "assets/images/products/p027-hydraboost-daily-moisturizer.svg",
+      "description": "A lightweight gel-cream that delivers 72-hour hydration with ceramides and niacinamide, without feeling greasy.",
+      "highlights": [
+        "72-hour hydration",
+        "Ceramides and niacinamide",
+        "Non-comedogenic",
+        "Dermatologist tested"
+      ]
+    },
+    {
+      "id": "p028",
+      "name": "Pro Blend Makeup Brush Set",
+      "category": "Beauty",
+      "price": 36,
+      "compareAtPrice": 45,
+      "rating": 4.6,
+      "reviews": 603,
+      "stock": 37,
+      "featured": false,
+      "image": "assets/images/products/p028-pro-blend-makeup-brush-set.svg",
+      "description": "A ten-piece set of ultra-soft synthetic brushes for flawless foundation, contour and eye looks, with a vegan leather roll.",
+      "highlights": [
+        "10 synthetic brushes",
+        "Ultra-soft, cruelty-free bristles",
+        "Vegan leather travel roll",
+        "Easy to clean"
+      ]
+    },
+    {
+      "id": "p029",
+      "name": "Noir Bloom Eau de Parfum 50 ml",
+      "category": "Beauty",
+      "price": 78,
+      "compareAtPrice": null,
+      "rating": 4.8,
+      "reviews": 356,
+      "stock": 14,
+      "featured": false,
+      "image": "assets/images/products/p029-noir-bloom-eau-de-parfum-50-ml.svg",
+      "description": "A warm floral fragrance with notes of jasmine, amber and sandalwood that lingers beautifully from day to night.",
+      "highlights": [
+        "Top: bergamot, pink pepper",
+        "Heart: jasmine, rose",
+        "Base: amber, sandalwood",
+        "Long-lasting eau de parfum"
+      ]
+    },
+    {
+      "id": "p030",
+      "name": "SilkAir Ionic Hair Dryer",
+      "category": "Beauty",
+      "price": 84,
+      "compareAtPrice": 109,
+      "rating": 4.5,
+      "reviews": 489,
+      "stock": 19,
+      "featured": false,
+      "image": "assets/images/products/p030-silkair-ionic-hair-dryer.svg",
+      "description": "A powerful 1,800 W ionic hair dryer that cuts drying time and frizz, with three heat settings and a cool shot.",
+      "highlights": [
+        "1,800 W AC motor",
+        "Ionic frizz control",
+        "3 heat / 2 speed settings",
+        "Concentrator and diffuser included"
+      ]
+    }
+  ]
+}
