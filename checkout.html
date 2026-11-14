@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — SmartCart</title>
+  <meta name="description" content="Complete your SmartCart order.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/pages/checkout.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div class="page-head">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span>
+        <a href="cart.html">Cart</a><span aria-hidden="true">/</span><span>Checkout</span>
+      </nav>
+      <h1>Checkout</h1>
+    </div>
+
+    <div id="checkout-root">
+      <div class="cart-layout">
+        <form class="checkout-form" id="checkout-form" novalidate>
+          <section class="panel">
+            <h2><span class="step">1</span> Contact details</h2>
+            <div class="form-grid">
+              <div class="field span-2">
+                <label for="fullName">Full name</label>
+                <input class="input" id="fullName" name="fullName" autocomplete="name" required minlength="3">
+                <span class="field__error" id="fullName-error"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required>
+                <span class="field__error" id="email-error"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+1 555 123 4567">
+                <span class="field__error" id="phone-error"></span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2><span class="step">2</span> Shipping address</h2>
+            <div class="form-grid">
+              <div class="field span-2">
+                <label for="address">Street address</label>
+                <input class="input" id="address" name="address" autocomplete="street-address" required>
+                <span class="field__error" id="address-error"></span>
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input class="input" id="city" name="city" autocomplete="address-level2" required>
+                <span class="field__error" id="city-error"></span>
+              </div>
+              <div class="field">
+                <label for="postalCode">Postal code</label>
+                <input class="input" id="postalCode" name="postalCode" autocomplete="postal-code" required>
+                <span class="field__error" id="postalCode-error"></span>
+              </div>
+              <div class="field span-2">
+                <label for="country">Country</label>
+                <select class="select" id="country" name="country" autocomplete="country-name" required>
+                  <option value="">Select a country</option>
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                  <option>Germany</option>
+                  <option>Pakistan</option>
+                  <option>United Arab Emirates</option>
+                </select>
+                <span class="field__error" id="country-error"></span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2><span class="step">3</span> Payment</h2>
+            <p class="muted small">This is a demo store — no payment details are collected and nothing is charged.</p>
+            <div class="radio-cards" role="radiogroup" aria-label="Payment method">
+              <label class="radio-card">
+                <input type="radio" name="payment" value="Cash on delivery" checked>
+                <span><strong>Cash on delivery</strong><span class="muted small">Pay when your order arrives</span></span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="payment" value="Card on delivery">
+                <span><strong>Card on delivery</strong><span class="muted small">Tap or swipe with the courier</span></span>
+              </label>
+            </div>
+            <div class="field" style="margin-top: 16px">
+              <label for="notes">Order notes <span class="muted">(optional)</span></label>
+              <textarea class="textarea" id="notes" name="notes" maxlength="300" placeholder="Delivery instructions, gate code, etc."></textarea>
+            </div>
+            <label class="checkbox" style="margin-top: 12px">
+              <input type="checkbox" id="terms" name="terms" required> I agree to the terms of service and return policy
+            </label>
+            <span class="field__error" id="terms-error"></span>
+          </section>
+        </form>
+
+        <aside class="panel summary" id="checkout-summary" aria-label="Order summary">
+          <div class="skeleton" style="height: 240px"></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

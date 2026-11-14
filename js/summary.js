@@ -2,7 +2,7 @@
 import { CONFIG } from './config.js';
 import { formatPrice } from './ui.js';
 
-export function orderSummaryHtml(totals, { title = 'Order summary' } = {}) {
+export function orderSummaryHtml(totals, { title = 'Order summary', showMeter = true } = {}) {
   const remaining = CONFIG.FREE_SHIPPING_THRESHOLD - totals.subtotal;
   const progress = Math.min(100, (totals.subtotal / CONFIG.FREE_SHIPPING_THRESHOLD) * 100);
 
@@ -15,7 +15,9 @@ export function orderSummaryHtml(totals, { title = 'Order summary' } = {}) {
       <div class="totals__grand"><dt>Total</dt><dd>${formatPrice(totals.total)}</dd></div>
     </dl>
     ${
-      remaining > 0
+      !showMeter
+        ? ''
+        : remaining > 0
         ? `<div class="shipping-meter">
             <p class="small">Add <strong>${formatPrice(remaining)}</strong> more for free shipping.</p>
             <div class="shipping-meter__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(progress)}" aria-label="Progress to free shipping"><span style="width:${progress}%"></span></div>
